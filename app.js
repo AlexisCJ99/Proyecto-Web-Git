@@ -14,7 +14,7 @@ app.set('view engine', 'ejs')
 app.use(router);
 
 //CONFIGURACION DEL PUERTO DE ENTRADA
-app.set('port', 4000)
+app.set('port', 9000)
 
 //Ejecucion del servidor web
 app.listen(app.get('port'),() => {
