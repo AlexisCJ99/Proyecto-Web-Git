@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="container-table">
+
+    <div class="cotizaciones-container">
+        <h2>Cotizaciones Guardadas</h2>
+        <button onclick="clearCotizaciones()">Eliminar Cotizaciones</button>
+        <a class="btn btn-sm btn-secondary" href="/precios">Regresar</a>
+        <table id="cotizacionesTable" class="cotizaciones-table">
+            <thead>
+                <tr>
+                    <th>Fechas de vuelos</th>
+                    <th>Hotel</th>
+                    <th>Salida</th>
+                    <th>Habitaciones</th>
+                    <th>Adultos</th>
+                    <th>Niños</th>
+                    <th>Hotel Precio</th>
+                    <th>Triple Precio</th>
+                    <th>Doble Precio</th>
+                    <th>Sencilla Precio</th>
+                    <th>Niños Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las cotizaciones guardadas se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="/cotizar.js"></script>
+
+
+<%- include('partials/footer.ejs'); -%>

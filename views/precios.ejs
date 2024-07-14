@@ -1,0 +1,72 @@
+<%- include('partials/header.ejs'); -%>
+
+<br><br><br>
+
+<div class="container-table">
+
+    <div class="form-container">
+        <h2>INGRESA LA FECHA Y COTIZA EN LÍNEA</h2>
+        <form id="cotizacionForm">
+            <div class="form-group">
+                <label for="start-date">Fechas de vuelos</label>
+                <input type="date" id="start-date" name="start-date">
+                <input type="date" id="end-date" name="end-date">
+            </div>
+            <div class="form-group">
+                <label for="hotel">Seleccionar Hotel</label>
+                <input type="text" id="hotel" name="hotel" value="Hotel Element Miami Doral By Westin">
+            </div>
+            <div class="form-group">
+                <label for="departure">Seleccionar Salida</label>
+                <input type="text" id="departure" name="departure" value="Quito (UIO), Aeropuerto Mariscal Sucre (UIO), Ecuador">
+            </div>
+            <div class="form-group">
+                <label for="rooms">Cantidad de habitaciones</label>
+                <input type="number" id="rooms" name="rooms" value="1">
+            </div>
+            <div class="form-group">
+                <label for="adults">Número de adultos</label>
+                <input type="number" id="adults" name="adults" value="2">
+            </div>
+            <div class="form-group">
+                <label for="children">Número de niños (2 - 11 Años)</label>
+                <input type="number" id="children" name="children" value="0">
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="cotizar()">COTIZACIÓN</button>
+
+                <br><br>
+                <a class="btn btn-sm btn-secondary" href="/cotizaciones">Ver las cotizaciones guardadas</a>
+            </div>
+        </form>
+        <table class="prices-table">
+            <thead>
+                <tr>
+                    <th>HOTEL</th>
+                    <th>TRIPLE</th>
+                    <th>DOBLE</th>
+                    <th>SENCILLA</th>
+                    <th>NIÑOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="hotel-price">-</td>
+                    <td id="triple-price">-</td>
+                    <td id="double-price">-</td>
+                    <td id="single-price">-</td>
+                    <td id="children-price">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+<script src="/cotizar.js"></script>
+
+<br><br><br><br><br>
+
+
+
+<%- include('partials/footer.ejs'); -%>
