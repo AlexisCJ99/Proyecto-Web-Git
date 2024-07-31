@@ -21,6 +21,10 @@ router.get('/about', (req, res) => {
   res.render('about')
 })
 
+router.get('/contacto', (req, res) => {
+  res.render('contacto')
+})
+
 router.get('/precios', (req, res) => {
   res.render('precios')
 })
