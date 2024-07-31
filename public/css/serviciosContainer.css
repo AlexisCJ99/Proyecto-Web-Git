@@ -1,0 +1,123 @@
+/* .card-img-filter 
+{
+    filter: brightness(0.5);
+}
+
+.card 
+{
+    transition-duration: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%
+        0 0
+    );
+}
+
+.card-effect:hover .card
+{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+}
+
+.card-img-overlay
+{
+    transition-duration: 0.6s;
+}
+
+.card-effect:hover .card-img-overlay
+{
+    transform: scale(0.9);
+}
+
+.fondoCartas
+{
+    width: 1473px;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(../imagenes/parque.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+.tourism-section
+{
+    width: 1473px;
+    height: 1720px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(../imagenes/parque.jpg);
+    
+    background-size: cover;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tourism-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.tourism-item .text, .tourism-item .image {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.tourism-item .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.tourism-item:nth-child(even) .text {
+    order: 2;
+}
+
+.tourism-item:nth-child(even) .image {
+    order: 1;
+}
+
+.tourism-item h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tourism-item p {
+    text-align: justify;
+    margin-bottom: 10px;
+}

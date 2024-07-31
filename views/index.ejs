@@ -1,52 +1,72 @@
-
 <%- include('partials/header.ejs'); -%>
 
-  <body>
-    
+<!-- Seccion de video -->
 
-    <div class="container">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/imagenes/juegos.jpg" class="w-100 d-md-block" alt="Hola" width="350" height="350">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="sadas">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="oasdlsa">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>  
-    </div>
+<section class="home">
+  <div class="content">
+    <h3>Descubre la Aventura</h3>
+    <p>Descubre nuevos lugares con nosotros, la aventura espera!</p>
+    <a href="/tour" class="btn">Descubre Más</a>
+  </div>
 
-    <br>
-<div class="container">
-    <h1 class="text-dark text-center">
-        PRESENTACION DE UNA PAGINA WEB
-    </h1>
-    <br>
+  <div class="controls">
+    <div class="vid-btn" data-src="../videos/paisaje.mp4"></div>
+    <div class="vid-btn" data-src="../videos/luces.mp4"></div>
+  </div>
 
-    <p class="text-warning">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque 
-        consequatur blanditiis, earum, eos esse eius suscipit atque laborum 
-        nostrum laboriosam maiores a exercitationem vero consequuntur 
-        deserunt assumenda officiis debitis labore, sapiente molestias 
-        reprehenderit sed. Culpa voluptatem impedit hic id perferendis animi 
-        perspiciatis numquam eum consequuntur. Animi maiores, quo, earum 
-        accusantium aliquid minus possimus enim vitae debitis dicta mollitia? 
-        Fugiat, nemo.
+  <div class="video-container">
+    <video
+      src="../videos/paisaje.mp4"
+      id="video-slider"
+      loop
+      autoplay
+      muted
+    ></video>
+  </div>
+</section>
+
+<!-- Seccion Tour -->
+ 
+<section class="tour">
+    <h2>Nuestro Tour</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ex
+      veritatis, atque velit sit dolores praesentium culpa unde tenetur. Vero.
     </p>
-</div>
-<br><br>
-
+  
+    <div class="fila">
+      <div class="col">
+        <a href="/tour"><img src="../iconos/montaña.png" alt="Aventura"></a>
+        <h2>Tour</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+          praesentium?
+        </p>
+      </div>
+  
+      <div class="col">
+        <br>
+        <a href="/servicios"><img src="../iconos/acampar.png" alt="Camping"></a>
+        <h2>Camping</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Molestiae, voluptate.
+        </p>
+      </div>
+  
+      <div class="col">
+        <a href="/localizacion"><img src="../iconos/mapa.png" alt="Localizacion"></a>
+        <h2>Localizacion</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Officiis, libero.
+        </p>
+      </div>
+    </div>
+  
+    <a href="/tour" class="btn">Ver Más</a>
+  </section>
+  
+  
 
 <%- include('partials/footer.ejs'); -%>

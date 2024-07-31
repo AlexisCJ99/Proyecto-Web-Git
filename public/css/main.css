@@ -1,0 +1,13 @@
+.header
+{
+  background-image: url(../imagenes/lago.jpg);
+  height: 90px;
+  width: 1473px;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-logo
+{
+  width: 40px;
+}
