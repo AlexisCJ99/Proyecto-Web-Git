@@ -96,6 +96,7 @@
     background: #fff;
     margin-top: -50px; /* Reduce el espacion de la seccion */
     z-index: 100;
+    border-radius: 40px;
   }
   
   .tour h2 {
